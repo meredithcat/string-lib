@@ -1,15 +1,23 @@
 {
   "name": "@meredithcat/string-lib",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "test writing a library",
-  "main": "index.js",
+  "main": "umd/string-lib.js",
+  "module": "esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test": "jest",
+    "prepare": "rollup --config"
   },
+  "files": [
+    "esm/*",
+    "emd/*"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "coveralls": "^3.0.4"
+    "coveralls": "^3.0.4",
+    "jest": "^24.8.0",
+    "rollup": "^1.16.4",
+    "rollup-plugin-terser": "^5.1.0"
   }
 }

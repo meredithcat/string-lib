@@ -1,0 +1,1 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e=e||self).stringLib={})}(this,function(e){"use strict";String.prototype.allCaps=function(){return this.toUpperCase()};e.randomRange=(e,t)=>Math.floor(Math.random()*(t-e))+e});

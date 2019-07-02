@@ -5,9 +5,9 @@ export default [
     input: 'src/index.js',
     plugins: [terser()],
     output: {
-        file: 'umd/your-module.js',
+        file: 'umd/string-lib.js',
         format: 'umd',
-        name: 'yourModule',
+        name: 'stringLib',
         esModule: false
     }
   },
