@@ -1,11 +1,15 @@
 {
   "name": "@meredithcat/string-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "test writing a library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.4"
+  }
 }
