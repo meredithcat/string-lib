@@ -6,7 +6,8 @@
   "module": "esm/index.js",
   "scripts": {
     "test": "jest",
-    "prepare": "rollup --config"
+    "prepare": "rollup --config",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "files": [
     "esm/*",
